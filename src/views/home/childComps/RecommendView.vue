@@ -1,3 +1,4 @@
+<!-- 推荐信息组件 -->
 <template>
  <div class="recommend">
     <div v-for="item in recommends" class="recommend-item">
@@ -40,6 +41,7 @@
 
    padding: 15px 0 20px;
    border-bottom: 8px solid #eee;
+   /* border-top: 8px solid #eee; */
  }
  .recommend-item{
    flex: 1;
