@@ -1,41 +1,36 @@
 <template>
- <div class="goods">
-  <goods-list-item class="goods-list" v-for="(item, index) in goods" :key="index" :goodsItem="item"/>
- </div>
+  <div class="goods">
+    <goods-list-item v-for="(item, index) in goods" :key="index" :goods-item="item"/>
+  </div>
 </template>
 
 <script>
-  import GoodsListItem from './GoodsListItem.vue';
- export default {
-   name: 'GoodsList',
-   data () {
-     return {
+  import GoodsListItem from './GoodsListItem'
 
-     }
-   },
-   props: {
-    goods: {
-      type: Array,
-      default(){
-        return []
+  export default {
+    name: "GoodsList",
+    components: {
+      GoodsListItem
+    },
+    props: {
+      goods: {
+        type: Array,
+        default() {
+          return []
+        }
       }
     }
-   },
-   components: {
-    GoodsListItem
-   }
- }
+  }
 </script>
 
-<style>
- .goods{
-  display: flex;
-  /*设置包裹*/
-  flex-wrap: wrap;
-  /*设置均等分*/
-  justify-content: space-around;
+<style scoped>
+  .goods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
-  padding: 2px;
- }
- 
+    padding: 2px;
+  }
+
+
 </style>

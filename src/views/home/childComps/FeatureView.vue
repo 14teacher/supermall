@@ -1,30 +1,19 @@
 <template>
- <div class="feature">
-   <a href="">
+  <div class="feature">
+    <a href="https://act.mogujie.com/zzlx67">
       <img src="~assets/img/home/recommend_bg.jpg" alt="">
-  </a>
- </div>
+    </a>
+  </div>
 </template>
 
 <script>
- export default {
-   name: 'FeatureView',
-   data () {
-     return {
-
-     }
-   },
-   components: {
-
-   }
- }
+  export default {
+    name: "FeatureView"
+  }
 </script>
 
-<style>
-  .feature{
-    border-bottom: 8px solid #eee;
+<style scoped>
+  .feature img {
+    width: 100%;
   }
- .feature img{
-  width: 100%;
- }
 </style>

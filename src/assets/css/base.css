@@ -1,8 +1,6 @@
 @import "./normalize.css";
 
-/* :root获取根元素 html
-    定义变量
-*/
+/*:root -> 获取根元素html*/
 :root {
   --color-text: #666;
   --color-high-text: #ff5777;
